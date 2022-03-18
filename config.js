@@ -1,6 +1,6 @@
 const config = {
-  "botversion": "3.2.2",
-  "prefix": ".",
+  "botversion": "3.0.0",
+  "prefix": "$",
   "serverinvite": "https://discord.gg/zM8GVxxNHZ",
   "invitelink": "https://discordapp.com/oauth2/authorize?client_id=376292306233458688&permissions=1073609975&redirect_uri=https%3A%2F%2Ficwbot.glitch.me%2Fthanks&response_type=code&scope=bot",
   "icwstaff": ["385099687465844736", "338966707680837632", "309321250587672586"],
