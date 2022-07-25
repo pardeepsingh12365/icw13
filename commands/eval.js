@@ -21,7 +21,7 @@ const translate = require('@vitalets/google-translate-api');
 var googleTTS = require('google-tts-api');
 //const DBL = require("dblapi.js");
 const pm2  = require("pm2");
-const playdl = require('play-dl')
+//const playdl = require('play-dl')
 const { 
   joinVoiceChannel,
 	createAudioPlayer,
