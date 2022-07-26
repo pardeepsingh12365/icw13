@@ -182,7 +182,7 @@ Please provide a value to select one of the search results ranging from 1-${ssel
 
           try {
 
-            var response = await message.channel.awaitMessages(
+            var response = await message.channel.awaitMessageComponent(
 
               message2 => message2.content > 0 && message2.content < sselect,
 
