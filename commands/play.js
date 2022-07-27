@@ -183,7 +183,7 @@ Please provide a value to select one of the search results ranging from 1-${ssel
 
           try {
 
-            var response = await message.channel.awaitMessageComponent(
+            await message.channel.awaitMessageComponent(
 
               
 
@@ -197,7 +197,10 @@ Please provide a value to select one of the search results ranging from 1-${ssel
 
               }
 
-            );
+            ).then(message => {console.log(message)})
+            .catch(error => {
+              console.log(error)
+            })
 
           } catch (err) {
             console.log(err)
