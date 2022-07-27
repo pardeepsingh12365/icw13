@@ -200,13 +200,13 @@ Please provide a value to select one of the search results ranging from 1-${ssel
             );
 
           } catch (err) {
-
+            console.log(err)
             return message.channel.send({content:"No or invalid value entered, cancelling video selection."});
 
           }
 
           const videoIndex = parseInt(response.first().content);
-
+          console.log("response:"+response)
           const video3 = videos[videoIndex - 1];
 
           //console.log(video3)
