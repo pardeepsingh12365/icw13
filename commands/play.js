@@ -179,20 +179,21 @@ Please provide a value to select one of the search results ranging from 1-${ssel
             .setTimestamp();
 
           message.channel.send({ embeds: [embed] });
+          const filter = (message2) => message2.content > 0 && message2.content < sselect 
 
           try {
 
             var response = await message.channel.awaitMessageComponent(
 
-              message2 => message2.content > 0 && message2.content < sselect,
+              
 
-              {
+              { filter,
 
-                max: 1,
+               // max: 1,
 
                 time: 20000,
 
-                errors: ["time"]
+            //    errors: ["time"]
 
               }
 
