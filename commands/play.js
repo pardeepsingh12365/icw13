@@ -183,24 +183,11 @@ Please provide a value to select one of the search results ranging from 1-${ssel
 
           try {
 
-            message.awaitMessageComponent(
+            message.awaitMessageComponent({ filter, time: 15_000 })
 
-              
+           .then(interaction => console.log(`${interaction.customId} was clicked!`))
 
-              { filter,
-
-               // max: 1,
-
-                time: 20000,
-
-            //    errors: ["time"]
-
-              }
-
-            ).then(interaction => console.log(`${interaction}`))
-            .catch(error => {
-              console.log(error)
-            })
+           .catch(console.error);
 
           } catch (err) {
             console.log(err)
